@@ -1,0 +1,11 @@
+<h1>Dashboard del administrador</h1>
+<p> A continuacion el listado de los usuarios del sistema:</p>
+<br/>
+
+<h3>Listado de usuarios </h3>
+{% for user in usuarios %}
+<p><label>Id: {{ user.id }}</label>
+    <label>Usuario: {{ user.username }}</label>
+    <label>Clave:  {{ user.password }}</label>
+</p>
+{% endfor %}
